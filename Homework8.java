@@ -7,6 +7,10 @@ public class Homework8 {
 
         BankingAccount myAccount = new BankingAccount();
         myAccount.deposit(500);
+        myAccount.deposit(sum: 150);
+        myAccount.deposit(sum: 35);
+        
+
         // please finish the rest
     }
 }
@@ -16,9 +20,14 @@ class BankingAccount {
     public int balance;
 
     public void deposit(int sum) {
+        balance = balance + sum;
+        System.out.println(balance);
         // do what?
     }
-
+    public void withdrawal(int sum){
+        balance = balance - sum;
+        System.out.println(balance);
+    }
     // what about withdrawal?
 }
 
