@@ -7,11 +7,20 @@ public class Homework8 {
 
         BankingAccount myAccount = new BankingAccount();
         myAccount.deposit(500);
-        myAccount.deposit(sum: 150);
-        myAccount.deposit(sum: 35);
-        
-
+        myAccount.deposit(150);
+        myAccount.deposit(35);
+        System.out.println(myAccount.balance);
+        if(myAccount.balance == 685){
+            System.out.println("$685 was successfully deposited into your account");
+        }
         // please finish the rest
+        myAccount.withdrawal(40);
+        myAccount.withdrawal(120);
+        System.out.println(myAccount.balance);
+        if(myAccount.balance == 525){
+            System.out.println("160 was successfully withdrawn from your account. Current account balance is " + myAccount.balance);
+        }
+
     }
 }
 
