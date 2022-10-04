@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class Practice_Objects {
     public static void main(String[] args){
       Cars natCar = new Cars();
@@ -6,7 +6,7 @@ public class Practice_Objects {
       natCar.color = "White";
       natCar.year = 2014;
         System.out.println(natCar.brand);
-        
+
       Cars vigCar = new Cars();
       vigCar.brand = "GMC";
       vigCar.color = "Gold";
